@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+
+      body {
+
+        font-family: Helvetica;
+        font-size: 13px;
+        margin: 0px 0px;
+
+      }
+
+      #topbar {
+
+        width:1000px;
+        margin:0 auto;
+        height: 40px;
+
+      }
+
+      #banner{
+
+        width:1000px;
+        margin:0 auto;
+        height: 60px;
+        background-color: red;
+
+      }
+
+      #banner h1 {
+
+        margin: 0px;
+        color: white;
+
+      }
+
+      #newsnav{
+
+        width:1000px;
+        margin:0 auto;
+        height: 40px;
+        line-height: 40px;
+        background-color: red;
+        text-color: white;
+
+      }
+
+      #pagename{
+
+        width:1000px;
+        margin:0 auto;
+        height: 60px;
+        line-height: 40px;
+
+      }
+
+      #pagename h2{
+
+        text-decoration:ul;
+        text-decoration-color:red;
+
+      }
+
+      #articles {
+
+        width:1000px;
+        margin:0 auto;
+
+      }
+
+      #main-article {
+
+        float:left;
+        width:390px;
+        margin: 0 5px 0px 0px;
+
+      }
+
+      #main-article h1 {
+
+        margin:0 auto;
+
+      }
+
+      #main-article p {
+
+        margin-top: 5px;
+        color:grey;
+
+      }
+
+      .top-articles {
+
+        width:590px;
+        float:left;
+
+      }
+
+      .top-article {
+
+        float:left;
+        width:190px;
+        margin: 0 5px 0px 0px;
+
+      }
+
+      .top-article h3 {
+
+        margin:0 auto;
+
+      }
+
+      .top-article p {
+
+        margin-top: 5px;
+        color:grey;
+
+      }
+
+      #logo {
+
+        float: left;
+        width: auto;
+
+      }
+
+      #signin{
+
+        float: left;
+        width: 80px;
+
+      }
+
+      #bell{
+
+        float: left;
+        width: 40px;
+
+      }
+
+      #search{
+
+        float: left;
+        width: 80px;
+
+      }
+
+      .topbar-section {
+
+          float: left;
+          text-align: center;
+          border-left: 2px grey solid;
+
+          height: 100%;
+
+      }
+
+      .topbar-item {
+
+          width: auto;
+          align: center;
+          padding: 6px 13px 6px 13px;
+
+      }
+
+      .newsnav-section {
+
+          float: left;
+          text-align: center;
+          border-left: 2px grey solid;
+          height: 50% 0;
+
+      }
+
+      .newsnav-item {
+
+          width: auto;
+          float: left;
+          text-align: center;
+          padding: 0 10px;
+
+      }
+
+      .newsnav-item a:hover {
+
+          border-bottom: white 5px solid;
+
+      }
+
+      .section-text{
+
+        margin-top:5px;
+        text-size:80%;
+
+      }
+
+      .section-text p {
+
+        size:80%;
+        color: grey;
+
+      }
+
+    </style>
+
+  </head>
+
+
+
+  <body>
+
+    <div id="topbar">
+
+      <div id = "logo">
+        <image src = "bbc.png">
+      </div>
+
+      <div id="signin" class = "topbar-section">
+
+        Sign-in
+
+      </div>
+
+      <div id = "bell" class = "topbar-section">
+
+        Bell
+
+      </div>
+
+      <div class = "topbar-section topbar-item">
+
+        Home
+
+      </div>
+
+      <div class = "topbar-section topbar-item">
+
+        News
+
+      </div>
+
+      <div class = "topbar-section topbar-item">
+
+        Sport
+
+      </div>
+
+      <div class = "topbar-section topbar-item">
+
+        Weather
+
+      </div>
+
+      <div class = "topbar-section topbar-item">
+
+        i-Player
+
+      </div>
+
+      <div class = "topbar-section topbar-item">
+
+        Sounds
+
+      </div>
+
+      <div class = "topbar-section topbar-item">
+
+        CBBC
+
+      </div>
+
+    </div>
+
+    <div id="banner">
+
+      <h1>NEWS</h1>
+
+    </div>
+
+    <div id="newsnav">
+
+      <div class = "newsnav-item">
+
+        <a href = https://www.bbc.co.uk/news>Home</a>
+
+      </div>
+
+      <div class = "newsnav-section newsnav-item">
+
+        UK
+
+      </div>
+
+      <div class = "newsnav-section newsnav-item">
+
+        World
+
+      </div>
+
+      <div class = "newsnav-section newsnav-item">
+
+        Business
+
+      </div>
+
+      <div class = "newsnav-section newsnav-item">
+
+        Politics
+
+      </div>
+
+    </div>
+
+    <div>
+
+      <h2 id = "pagename">Technology</h2>
+
+    </div>
+
+    <div id = "articles">
+
+      <div id = "main-article">
+
+        <image src = "face-rec.png">
+
+        <h1>Microsoft deletes massive face database</h1>
+
+        <p>The widely used database was created by copying images of celebrities found on websites and blogs</p>
+
+        <div class = "section-text">
+          <p>Time | Technology</p>
+        </div>
+
+      </div>
+
+      <div class = "top-articles">
+
+        <div class = "top-article">
+
+          <image src = "we-chat.png">
+
+          <h3>Vigil photos lead to We-Chat lockout</h3>
+
+          <p>How one BBC journalist was locked out of one of Chinas top messaging services</p>
+
+          <div class = "section-text">
+            <p>Time | Technology</p>
+          </div>
+
+        </div>
+
+        <div class = "top-article">
+
+          <image src = "we-chat.png">
+
+          <h3>Vigil photos lead to We-Chat lockout</h3>
+
+          <p>How one BBC journalist was locked out of one of Chinas top messaging services</p>
+
+          <div class = "section-text">
+            <p>Time | Technology</p>
+          </div>
+
+        </div>
+
+        <div class = "top-article">
+
+          <image src = "we-chat.png">
+
+          <h3>Vigil photos lead to We-Chat lockout</h3>
+
+          <p>How one BBC journalist was locked out of one of Chinas top messaging services</p>
+
+          <div class = "section-text">
+            <p>Time | Technology</p>
+          </div>
+
+        </div>
+
+        <div class = "top-articles">
+
+          <div class = "top-article">
+
+            <image src = "we-chat.png">
+
+            <h3>Vigil photos lead to We-Chat lockout</h3>
+
+            <p>How one BBC journalist was locked out of one of Chinas top messaging services</p>
+
+            <div class = "section-text">
+              <p>Time | Technology</p>
+            </div>
+
+          </div>
+
+          <div class = "top-article">
+
+            <image src = "we-chat.png">
+
+            <h3>Vigil photos lead to We-Chat lockout</h3>
+
+            <p>How one BBC journalist was locked out of one of Chinas top messaging services</p>
+
+            <div class = "section-text">
+              <p>Time | Technology</p>
+            </div>
+
+          </div>
+
+          <div class = "top-article">
+
+            <image src = "we-chat.png">
+
+            <h3>Vigil photos lead to We-Chat lockout</h3>
+
+            <p>How one BBC journalist was locked out of one of Chinas top messaging services</p>
+
+            <div class = "section-text">
+              <p>Time | Technology</p>
+            </div>
+
+          </div>
+
+
+    </div>
+
+  </body>
+</html>

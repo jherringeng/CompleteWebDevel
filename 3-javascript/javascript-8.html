@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <p id="magicWordOutput">How many fingers am I holding up?</p>
+
+    <select id="fingersEntered">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <button id = "enterFingers">Begin</button>
+
+    <script type = "text/javascript">
+
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+      }
+
+      document.getElementById("enterFingers").onclick = function () {
+
+        var fingersHeldUp = document.getElementById("fingersEntered").value;
+        //var fingersHeldUp = fingersInput.options[fingersInput.selectedIndex].value;
+
+        var i = 0;
+
+        do  {
+
+          i++;
+          var fingersGuess = getRandomInt(6);
+
+        } while (fingersGuess != fingersHeldUp);
+
+        alert("It took " + i + "guesses.");
+
+      }
+
+    </script>
+
+  </body>
+</html>

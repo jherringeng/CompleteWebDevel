@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <p id="magicWordOutput">What is the magic word?</p>
+
+    <input id = "magicWordText" type = "textinput"></input>
+
+    <button id = "enterMagic">Enter magic word</button>
+
+    <script type = "text/javascript">
+
+      var magicWord = "Shazam!";
+
+      document.getElementById("enterMagic").onclick = function () {
+
+        var magicWordInput = document.getElementById("magicWordText").value;
+
+        if (magicWordInput == magicWord) {
+
+          document.getElementById("magicWordOutput").innerHTML = "You entered the magic word!";
+
+        } else {
+
+          document.getElementById("magicWordOutput").innerHTML = "You did not enter the magic word!";
+
+        }
+
+      }
+
+    </script>
+
+  </body>
+</html>

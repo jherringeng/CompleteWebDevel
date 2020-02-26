@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <p id="magicWordOutput">How many fingers am I holding up?</p>
+
+    <input id = "fingersEntered" type = "textinput"></input>
+
+    <button id = "enterFingers">Enter number of fingers</button>
+
+    <script type = "text/javascript">
+
+      document.getElementById("enterFingers").onclick = function () {
+
+        var fingers = getRandomInt(6);
+
+        function getRandomInt(max) {
+          return Math.floor(Math.random() * Math.floor(max));
+        }
+
+        var magicWordInput = document.getElementById("fingersEntered").value;
+
+        if (magicWordInput == fingers) {
+
+          alert("Good guess! That's correct!");
+
+        } else {
+
+          alert("Bad guess! That's incorrect! It was " + fingers + ".");
+
+        }
+
+      }
+
+    </script>
+
+  </body>
+</html>

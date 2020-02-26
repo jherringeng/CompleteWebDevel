@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <p id="text"></p>
+
+    <script type="text/javascript">
+
+      $.ajax("info.txt").done(function(data){
+
+        $("#text").html(data);;
+
+      }).fail(function(){
+
+        alert("content failed")
+
+      })
+
+    </script>
+
+  </body>
+</html>

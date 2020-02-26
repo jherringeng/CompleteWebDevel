@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>1st Javascript Page</title>
+  </head>
+  <body>
+
+    <p id="text">Text to change</p>
+
+    <button id = "myButton">Click Me!</button>
+
+    <p id = "secondParagraph">Javascript is .....</p>
+
+    <button id = "my2ndButton">Click me!</button>
+
+    <p id = "thirdParagraph"></p>
+
+    <button id = "my3rdButton">Click me!</button>
+
+    <script type="text/javascript">
+
+      document.getElementById("myButton").onclick = function() {
+
+        document.getElementById('text').innerHTML = "Text has changed";
+
+      }
+
+      document.getElementById("my2ndButton").onclick = function() {
+
+        document.getElementById('secondParagraph').innerHTML = "I think "  + document.getElementById('secondParagraph').innerHTML + " easy.";
+
+      }
+
+      document.getElementById("my3rdButton").onclick = function() {
+
+        document.getElementById('thirdParagraph').innerHTML = "Text appears from nowhere... Woooo...";
+
+      }
+
+    </script>
+
+  </body>
+</html>

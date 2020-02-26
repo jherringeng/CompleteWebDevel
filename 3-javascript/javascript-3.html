@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Text Input</title>
+
+    <style>
+
+      .textinput {
+
+        float:left;
+
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <p id="text">This is some text</p>
+
+    <div class = "textinput">
+
+      <input id = "inputtext" type = "textinput"></input>
+
+      <button id="changeText">Change the Text</button>
+
+    </div>
+
+    <script type = "text/javascript">
+
+      document.getElementById('changeText').onclick = function() {
+
+        document.getElementById('text').innerHTML = document.getElementById('inputtext').value;
+
+      }
+
+    </script>
+
+  </body>
+</html>
